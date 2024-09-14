@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(97, 97, 100, 0.9) 0%, rgba(81, 97, 122, 0.9) 100%);
+    background: linear-gradient(90deg, rgba(214, 149, 245, 0.9) 20%, rgb(160, 102, 187) 100%);
     text-shadow: 2px 2px 5px #3d3d3d;
     padding: 10px 0;
     margin: 0;

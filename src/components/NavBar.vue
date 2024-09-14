@@ -41,7 +41,7 @@
   z-index: 1030; 
   position: fixed !important;
   width: 100vw !important;
-  background: linear-gradient(90deg, rgba(97, 97, 100, 0.9) 0%, rgba(81, 97, 122, 0.9) 100%);
+  background: linear-gradient(90deg, rgba(222, 169, 247, 0.9) 20%, rgb(160, 102, 187) 100%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
@@ -88,7 +88,7 @@
 
 .logo-main {
   display: block;
-  font-size: 24px; 
+  font-size: 30px; 
   font-weight: bold;
   color: #fff; 
   font-family: "Permanent Marker", cursive;
