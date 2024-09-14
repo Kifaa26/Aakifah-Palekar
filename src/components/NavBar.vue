@@ -37,13 +37,14 @@
 <style scoped>
 .navbar {
   padding: 20px 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Bubbler One", sans-serif;
   z-index: 1030; 
   position: fixed !important;
   width: 100vw !important;
-  background: linear-gradient(90deg, rgba(222, 169, 247, 0.9) 20%, rgb(160, 102, 187) 100%);
+  background: linear-gradient(90deg, rgb(54, 97, 146)20%, rgba(130, 175, 228, 0.925)100%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+  font-size: 1.3rem;
 }
 
 .navbar-brand .logo {
@@ -59,21 +60,20 @@
   text-shadow: 2px 2px 5px #00000088;
 }
 
-.navbar-nav .nav-link::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 1px; 
-  height: 2px; 
-  width: 0;
-  background-color: #ffffff; 
-  transition: width 0.3s ease;
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 3px;
+  align-content: center;
 }
 
-.navbar-nav .nav-link:hover::after,
-.navbar-nav .nav-link.active::after {
-  width: 70%;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2); 
 }
 
 @media (max-width: 767.98px) {

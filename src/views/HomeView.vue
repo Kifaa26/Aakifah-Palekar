@@ -19,7 +19,7 @@
 </template>
 
 <script>
-// import HomeSection from '@/components/HomeSection.vue'
+import HomeSection from '@/components/HomeSection.vue'
 // import AboutMeSection from '@/components/AboutMeSection.vue'
 // import ResumeSection from '@/components/Education&ExperienceSection.vue'
 // import ProjectsSection from '@/components/ProjectsSection.vue'
@@ -27,7 +27,7 @@
 
 export default {
   components: {
-    // HomeSection
+    HomeSection,
     // AboutMeSection,
     // Education&ExperienceSectionSection,
     // ProjectsSection,

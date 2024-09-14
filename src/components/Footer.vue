@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(214, 149, 245, 0.9) 20%, rgb(160, 102, 187) 100%);
+    background: linear-gradient(90deg, rgb(54, 97, 146) 20%, rgb(112, 160, 216)100%);
     text-shadow: 2px 2px 5px #3d3d3d;
     padding: 10px 0;
     margin: 0;
@@ -33,5 +33,4 @@
     font-family: "Playfair Display", serif;
     color: #e3e3e3;
     }
-    
     </style>
