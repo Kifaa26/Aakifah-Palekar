@@ -5,16 +5,17 @@ import { createStore } from 'vuex'
 import { toast } from 'vue3-toastify'
 
 const portfolioURL = 'https://kifaa26.github.io/Info/data/'
+
 export default createStore({
   state: {
     home: null,
     aboutMe: null,
     education: null,
     experience: null,
-    projects: null
+    projects: null,
+    softSkills: null  // Added softSkills state
   },
-  getters: {
-  },
+  getters: {},
   mutations: {
     setHome(state, value) {
       state.home = value;
@@ -30,6 +31,9 @@ export default createStore({
     },
     setProjects(state, value) {
       state.projects = value;
+    },
+    setSoftSkills(state, value) {  // Added mutation for softSkills
+      state.softSkills = value;
     }
   },
   actions: {
@@ -83,7 +87,7 @@ export default createStore({
     async getSoftSkills(context) {
       try {
         let { softSkills } = (await axios.get(portfolioURL)).data;
-        context.commit('setSoftSkills', softSkills);
+        context.commit('setSoftSkills', softSkills);  // Committing to the correct mutation
       } catch (e) {
         toast.error('Failed to fetch soft skills data', {
           position: 'top-right',
@@ -101,8 +105,7 @@ export default createStore({
           autoClose: 2000
         });
       }
-    },
+    }
   },
-  modules: {
-  }
+  modules: {}
 });
