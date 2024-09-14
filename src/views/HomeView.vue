@@ -1,18 +1,41 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+      <section id="home" >
+        <HomeSection/>
+      </section>
+      <section id="aboutMe">
+        <AboutMeSection/>
+      </section>
+      <section id="eduction&experience">
+        <ResumeSection/>
+      </section>
+      <section id="projects">
+        <ProjectsSection/>
+      </section>
+      <section id="contactMe">
+        <ContactSection/>
+      </section>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import HomeSection from '@/components/HomeSection.vue'
+// import AboutMeSection from '@/components/AboutMeSection.vue'
+// import ResumeSection from '@/components/Education&ExperienceSection.vue'
+// import ProjectsSection from '@/components/ProjectsSection.vue'
+// import ContactSection from '@/components/ContactSection.vue'
 
 export default {
-  name: 'HomeView',
   components: {
-    HelloWorld
+    // HomeSection
+    // AboutMeSection,
+    // Education&ExperienceSectionSection,
+    // ProjectsSection,
+    // ContactSection
   }
 }
 </script>
+
+<style>
+</style>
+
