@@ -103,7 +103,7 @@ export default {
 <style scoped>
 .text-container {
   padding: 8rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Bubbler One", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@ export default {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   color: whitesmoke;
   text-shadow: 2px 2px 5px #000000;
@@ -164,6 +164,7 @@ p {
   font-size: 1.3rem;
   color: whitesmoke;
   text-shadow: 2px 2px 5px #000000;
+  font-family: "Bubbler One", sans-serif;
 }
 
 .skill-item i,
@@ -188,10 +189,10 @@ p {
 
 .hobbies-container {
   display: flex;
-  justify-content: center; /* Center all hobby items */
-  align-items: center; /* Vertically align items */
-  gap: 2rem; /* Space between hobby items */
-  flex-wrap: nowrap; /* Keep them all in one row */
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem; 
+  flex-wrap: nowrap; 
 }
 
 .hobby-item {
@@ -201,7 +202,7 @@ p {
 }
 
 .hobby-image {
-  width: 230px; /* Slightly bigger */
+  width: 230px; 
   height: 230px;
   object-fit: cover;
   border-radius: 10px;
@@ -210,8 +211,9 @@ p {
 }
 
 .hobby-name {
-  font-size: 1.4rem; /* Slightly bigger text */
+  font-size: 1.4rem; 
   color: whitesmoke;
-  text-shadow: 1px 1px 3px #000000;
+  text-shadow: 2px 2px 5px #000000;
+  font-family: "Bubbler One", sans-serif;
 }
 </style>
