@@ -3,7 +3,6 @@
     <section class="contact-section">
       <div class="contact-content">
         <div class="contact-form-wrapper">
-          <h2>Contact Me</h2>
           
           <form action="https://formspree.io/f/xpwaeybe" method="POST" class="contact-form">
             <label for="name">Name:</label>
@@ -100,7 +99,7 @@ body {
   align-items: center;
 }
 
-.contact-text h2 {
+/* .contact-text h2 {
   font-size: 2.8rem;
   margin: 0;
   padding-top: 100px;
@@ -109,7 +108,7 @@ body {
   text-align: center;
   font-family: "Permanent Marker", cursive;
   text-shadow: 2px 2px 5px #000000;
-}
+} */
 
 .contact-form {
   display: flex;
@@ -220,6 +219,43 @@ body {
 
 .btn-dark:hover {
   background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem; /* Adjust gap for smaller screens */
+  }
+  
+  .contact-form-wrapper, .contact-info {
+    padding: 1rem; /* Adjusted padding for smaller screens */
+  }
+  
+  .contact-info {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 4rem; 
+    width: 100%;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem; 
+    margin-left: 70px;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem; 
+    margin-left: 70px;
+  }
+  
+  .social-links a {
+    font-size: 1rem; 
+    padding: 0.6rem;
+  }
 }
 
 </style>
