@@ -88,7 +88,7 @@ export default {
         { name: 'Reading', image: 'https://github.com/Kifaa26/images/blob/main/images/books.jpg?raw=true' },
         { name: 'Hiking', image: 'https://github.com/Kifaa26/images/blob/main/images/hiking%202.jpg?raw=true' },
         { name: 'Gyming', image: 'https://github.com/Kifaa26/images/blob/main/images/gym.jpg?raw=true' },
-        { name: 'Family time', image: 'https://github.com/Kifaa26/images/blob/main/images/family%203.jpg?raw=true' }
+        { name: 'Family time', image: 'https://github.com/Kifaa26/images/blob/main/images/family%204.jpg?raw=true' }
       ]
     };
   },
@@ -117,6 +117,7 @@ export default {
 .text-container {
   font-family: "Bubbler One", sans-serif;
   max-width: 60%;
+  
 }
 
 .image-container {

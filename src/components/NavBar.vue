@@ -73,7 +73,8 @@
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.2); 
+  background-color: rgba(255, 255, 255, 0.247); 
+  border-radius: 8px 8px 8px 8px;
 }
 
 @media (max-width: 767.98px) {

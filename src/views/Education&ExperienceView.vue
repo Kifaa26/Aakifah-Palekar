@@ -4,7 +4,7 @@
       <h2>Education</h2>
       <div v-for="(edu, index) in education" :key="index" class="grid-card">
         <div class="grid-card-content">
-          <img :src="edu.image" alt="Education Image" class="education-image" v-if="edu.image" />
+          <img :src="edu.image" alt="Education Image" class="education-image" loading="lazy" v-if="edu.image" />
           <div class="text-content">
             <h3>{{ edu.degree }}</h3>
             <p><strong>School:</strong> {{ edu.school }}</p>
@@ -18,7 +18,7 @@
       <h2>Experience</h2>
       <div class="grid-card">
         <div class="grid-card-content">
-          <img :src="experience.image" alt="Experience Image" class="experience-image" v-if="experience.image" />
+          <img :src="experience.image" alt="Experience Image" class="experience-image" loading="lazy" v-if="experience.image" />
           <div class="text-content">
             <h3>{{ experience.position }}</h3>
             <p><strong>Company:</strong> {{ experience.company }}</p>
