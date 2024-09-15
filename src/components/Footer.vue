@@ -33,4 +33,31 @@
     font-family: "Playfair Display", serif;
     color: #e3e3e3;
     }
-    </style>
+
+    @media (min-width: 576px) {
+  .footer-content .lead {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-content .lead {
+    font-size: 1.5rem;
+  }
+
+  .footer-container {
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-content .lead {
+    font-size: 1.75rem;
+  }
+
+  .footer-container {
+    padding: 20px 0;
+  }
+}
+  
+</style>
