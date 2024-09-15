@@ -55,7 +55,7 @@ export default {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-family: "Permanent Marker", cursive;
     padding: 130px;
     display: flex;
@@ -68,7 +68,7 @@ h2 {
 
 .card {
   margin-bottom: 100px;
-  background-color: #4a4d64c8;
+  background-color: #5b85c4c8;
   height: auto;
   min-height: 350px; 
   border-radius: 8px;
