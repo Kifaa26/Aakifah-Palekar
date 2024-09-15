@@ -141,6 +141,8 @@ export default {
   text-shadow: 2px 2px 5px #000000;
   font-family: "Permanent Marker", cursive;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
