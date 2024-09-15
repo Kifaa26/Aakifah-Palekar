@@ -16,6 +16,11 @@ const routes = [
     name: 'Eductation&Experience',
     component: () => import('@/views/Education&ExperienceView.vue')
   },
+  {
+    path: '/projects',
+    name: 'Projects',
+    component: () => import('@/views/ProjectsView.vue')
+  },
 ]
 
 const router = createRouter({

@@ -81,7 +81,7 @@ export default {
         { name: 'Vue.Js', icon: 'fa-vuejs', color: '#42b883' }, 
         { name: 'Node.Js', icon: 'fa-node-js', color: '#8cc84b' }, 
         { name: 'MySQL', icon: "fa-solid fa-database", style:"color: #74C0FC" }, 
-        { name: 'Canva', icon: 'fa-paint-brush', color: '#00c4cc' }, 
+        { name: 'Canva', icon: 'fa-paint-brush', color: '#1572b6' }, 
         { name: 'GitHub', icon: 'fa-github', color: '#333' } 
       ],
       hobbies: [
@@ -245,3 +245,4 @@ p {
   font-family: "Bubbler One", sans-serif;
 }
 </style>
+
