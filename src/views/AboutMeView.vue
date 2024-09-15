@@ -1,13 +1,18 @@
 <template>
-  <section>
-    <div class="text-container">
-      <div v-if="aboutMe">
-        <h2 class="title">{{ aboutMe.title }}</h2>
-        <div class="fun-block">
-          <p>{{ aboutMe.description }}</p>
+ <section>
+    <div class="about-container">
+      <div class="text-container">
+        <div v-if="aboutMe">
+          <h2 class="title">{{ aboutMe.title }}</h2>
+          <div class="fun-block">
+            <p>{{ aboutMe.description }}</p>
+          </div>
         </div>
+        <SpinnerComp v-else />
       </div>
-      <SpinnerComp v-else />
+      <div class="image-container">
+        <img src="https://github.com/Kifaa26/images/blob/main/images/code.jpg?raw=true" alt="Coding Image" class="about-image" loading="lazy" />
+      </div>
     </div>
   </section>
 
@@ -101,12 +106,33 @@ export default {
 </script>
 
 <style scoped>
-.text-container {
-  padding: 8rem;
-  font-family: "Bubbler One", sans-serif;
+
+.about-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 8rem;
+}
+
+.text-container {
+  font-family: "Bubbler One", sans-serif;
+  max-width: 60%;
+}
+
+.image-container {
+  max-width: 35%;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
 }
 
 .title {
@@ -114,12 +140,12 @@ export default {
   color: whitesmoke;
   text-shadow: 2px 2px 5px #000000;
   font-family: "Permanent Marker", cursive;
-  text-align: center;
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .fun-block {
-  border: 4px double #000000; 
+  border: 4px double #000000;
   border-radius: 10px;
   padding: 1rem;
   max-width: 800px;
@@ -131,7 +157,6 @@ p {
   color: whitesmoke;
   text-shadow: 2px 2px 5px #000000;
 }
-
 .skills-section,
 .tech-skills-section {
   text-align: center;
@@ -169,7 +194,7 @@ p {
 
 .skill-item i,
 .tech-skill-item i {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   text-shadow: 2px 2px 5px #000000;
 }
 
