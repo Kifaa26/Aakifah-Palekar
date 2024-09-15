@@ -1,0 +1,125 @@
+[debug] [2024-09-15T12:32:39.426Z] ----------------------------------------------------------------------
+[debug] [2024-09-15T12:32:39.430Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aakifah\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-15T12:32:39.431Z] CLI Version:   13.17.0
+[debug] [2024-09-15T12:32:39.431Z] Platform:      win32
+[debug] [2024-09-15T12:32:39.431Z] Node Version:  v20.16.0
+[debug] [2024-09-15T12:32:39.432Z] Time:          Sun Sep 15 2024 14:32:39 GMT+0200 (South Africa Standard Time)
+[debug] [2024-09-15T12:32:39.432Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-15T12:32:39.443Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-15T12:32:39.443Z] > authorizing via signed-in user (akifahpalekar@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Aakifah\Documents\personal_projects\aakifah-palekar
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-15T12:32:48.148Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-09-15T12:32:49.056Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-09-15T12:32:49.056Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project aakifah-palekar-61406 (Aakifah Palekar) 
+[info] 
+=== Hosting Setup
+[debug] [2024-09-15T12:32:50.078Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/aakifah-palekar-61406 [none]
+[debug] [2024-09-15T12:32:50.507Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/aakifah-palekar-61406 200
+[debug] [2024-09-15T12:32:50.508Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/aakifah-palekar-61406 {"projectId":"aakifah-palekar-61406","projectNumber":"409236130677","displayName":"Aakifah Palekar","name":"projects/aakifah-palekar-61406","resources":{"hostingSite":"aakifah-palekar-61406"},"state":"ACTIVE","etag":"1_bc64cde1-088d-46e0-ad6f-e36a919c53be"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote dist/404.html 
+[debug] [2024-09-15T12:33:06.923Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-09-15T12:33:07.426Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-09-15T12:33:07.427Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.13.1","browserURL":"https://www.gstatic.com/firebasejs/10.13.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.13.1/firebase.tgz"},"live":{"version":"10.13","browserURL":"https://www.gstatic.com/firebasejs/live/10.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.13.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.13.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.13.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.13.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.13.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.13.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.13.1/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of dist/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Aakifah\Documents\personal_projects\aakifah-palekar 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=431183922&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-09-15T12:33:15.357Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-09-15T12:33:15.358Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-09-15T12:33:15.798Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-09-15T12:33:15.799Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-09-15T12:33:15.821Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-09-15T12:33:16.237Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-09-15T12:33:16.237Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Kifaa26","id":167191914,"node_id":"U_kgDOCfclag","avatar_url":"https://avatars.githubusercontent.com/u/167191914?v=4","gravatar_id":"","url":"https://api.github.com/users/Kifaa26","html_url":"https://github.com/Kifaa26","followers_url":"https://api.github.com/users/Kifaa26/followers","following_url":"https://api.github.com/users/Kifaa26/following{/other_user}","gists_url":"https://api.github.com/users/Kifaa26/gists{/gist_id}","starred_url":"https://api.github.com/users/Kifaa26/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Kifaa26/subscriptions","organizations_url":"https://api.github.com/users/Kifaa26/orgs","repos_url":"https://api.github.com/users/Kifaa26/repos","events_url":"https://api.github.com/users/Kifaa26/events{/privacy}","received_events_url":"https://api.github.com/users/Kifaa26/received_events","type":"User","site_admin":false,"name":"Aakifah Palekar","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":38,"public_gists":0,"followers":2,"following":1,"created_at":"2024-04-16T10:05:21Z","updated_at":"2024-09-12T13:28:53Z","private_gists":0,"total_private_repos":4,"owned_private_repos":4,"disk_usage":65460,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Kifaa26 
+[info] 
+[debug] [2024-09-15T12:33:53.617Z] >>> [apiv2][query] GET https://api.github.com/repos/Kifaa26 / Aakifah-Palekar            /actions/secrets/public-key type=owner
+[debug] [2024-09-15T12:33:53.994Z] <<< [apiv2][status] GET https://api.github.com/repos/Kifaa26 / Aakifah-Palekar            /actions/secrets/public-key 404
+[debug] [2024-09-15T12:33:53.995Z] <<< [apiv2][body] GET https://api.github.com/repos/Kifaa26 / Aakifah-Palekar            /actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-15T12:36:52.795Z] >>> [apiv2][query] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar/actions/secrets/public-key type=owner
+[debug] [2024-09-15T12:36:53.178Z] <<< [apiv2][status] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar/actions/secrets/public-key 404
+[debug] [2024-09-15T12:36:53.178Z] <<< [apiv2][body] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-15T12:38:56.447Z] >>> [apiv2][query] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key type=owner
+[debug] [2024-09-15T12:38:56.881Z] <<< [apiv2][status] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key 404
+[debug] [2024-09-15T12:38:56.881Z] <<< [apiv2][body] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-15T12:39:51.016Z] >>> [apiv2][query] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                       aakifah-palekar-61406/actions/secrets/public-key type=owner
+[debug] [2024-09-15T12:39:51.403Z] <<< [apiv2][status] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                       aakifah-palekar-61406/actions/secrets/public-key 404
+[debug] [2024-09-15T12:39:51.403Z] <<< [apiv2][body] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                       aakifah-palekar-61406/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-15T12:46:44.567Z] >>> [apiv2][query] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key type=owner
+[debug] [2024-09-15T12:46:44.930Z] <<< [apiv2][status] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key 404
+[debug] [2024-09-15T12:46:44.930Z] <<< [apiv2][body] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-15T12:47:15.538Z] >>> [apiv2][query] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key type=owner
+[debug] [2024-09-15T12:47:16.001Z] <<< [apiv2][status] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key 404
+[debug] [2024-09-15T12:47:16.002Z] <<< [apiv2][body] GET https://api.github.com/repos/Kifaa36/Aakifah-Palekar                      /actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
