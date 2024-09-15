@@ -224,11 +224,11 @@ body {
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
-    gap: 2rem; /* Adjust gap for smaller screens */
+    gap: 2rem; 
   }
   
   .contact-form-wrapper, .contact-info {
-    padding: 1rem; /* Adjusted padding for smaller screens */
+    padding: 1rem;
   }
   
   .contact-info {
@@ -255,6 +255,7 @@ body {
   .social-links a {
     font-size: 1rem; 
     padding: 0.6rem;
+    margin-left: 70px;
   }
 }
 

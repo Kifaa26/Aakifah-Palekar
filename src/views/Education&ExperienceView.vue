@@ -71,7 +71,7 @@ export default {
 
 .grid-item {
   background-color: rgba(140, 184, 235, 0.9);
-  padding: 1rem;
+  padding: 3.3rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -125,4 +125,59 @@ p {
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 5px #8b8b8b;
 }
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr; 
+    padding: 10rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; 
+    padding: 7rem; 
+  }
+
+  .grid-card-content {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .education-image,
+  .experience-image {
+    max-width: 100%; 
+  }
+
+  h2 {
+    font-size: 1.8rem; 
+  }
+
+  h3 {
+    font-size: 1.2rem; 
+  }
+
+  p {
+    font-size: 1.1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    padding: 5rem; 
+  }
+
+  h2 {
+    font-size: 1.6rem; 
+  }
+
+  h3 {
+    font-size: 1rem; 
+  }
+
+  p {
+    font-size: 1rem; 
+  }
+}
+
 </style>

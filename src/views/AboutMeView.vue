@@ -110,26 +110,29 @@ export default {
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 8rem;
+  justify-content: center; 
+  flex-direction: column; 
+  padding: 8rem; 
 }
 
 .text-container {
   font-family: "Bubbler One", sans-serif;
-  max-width: 60%;
-  
+  max-width: 90%; 
+  text-align: center; 
 }
 
 .image-container {
-  max-width: 35%;
+  display: flex;
+  justify-content: center; 
+  max-width: 90%; 
 }
 
 .about-image {
   width: 100%;
+  max-width: 400px; 
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
-  margin: 20px;
-  margin-top: 100px;
+  margin-top: 20px; 
 }
 
 .about-image:hover {
@@ -142,16 +145,16 @@ export default {
   text-shadow: 2px 2px 5px #000000;
   font-family: "Permanent Marker", cursive;
   margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center; 
 }
 
 .fun-block {
   border: 4px double #000000;
   border-radius: 10px;
   padding: 1rem;
-  max-width: 800px;
+  max-width: 90%; 
+  margin: 20px auto; 
+  text-align: center; 
 }
 
 p {
@@ -160,10 +163,10 @@ p {
   color: whitesmoke;
   text-shadow: 2px 2px 5px #000000;
 }
+
 .skills-section,
 .tech-skills-section {
   text-align: center;
-  justify-items: center;
 }
 
 .skills-title,
@@ -178,10 +181,11 @@ p {
 .tech-skills-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 1rem;
-  max-width: 800px; 
-  margin: 20px auto; 
+  gap: 2.5rem;
+  max-width: 90%; 
+  margin: 10px auto; 
   padding: 3.5rem;
+  justify-items: center; 
 }
 
 .skill-item,
@@ -189,18 +193,18 @@ p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: whitesmoke;
   text-shadow: 2px 2px 5px #000000;
   font-family: "Bubbler One", sans-serif;
+  text-align: center; 
 }
 
 .skill-item i,
 .tech-skill-item i {
-  font-size: 2.3rem;
+  font-size: 3.5rem;
   text-shadow: 2px 2px 5px #000000;
 }
-
 .hobbies-section {
   text-align: center;
   margin: 2rem auto;
@@ -217,10 +221,10 @@ p {
 
 .hobbies-container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  gap: 2rem; 
-  flex-wrap: nowrap; 
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; 
 }
 
 .hobby-item {
@@ -230,7 +234,7 @@ p {
 }
 
 .hobby-image {
-  width: 230px; 
+  width: 230px;
   height: 230px;
   object-fit: cover;
   border-radius: 10px;
@@ -239,10 +243,99 @@ p {
 }
 
 .hobby-name {
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
   color: whitesmoke;
   text-shadow: 2px 2px 5px #000000;
   font-family: "Bubbler One", sans-serif;
 }
+
+
+
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 4rem; 
+  }
+
+  .text-container, .image-container {
+    max-width: 100%; 
+  }
+
+  .about-image {
+    width: 80%; 
+    max-width: 300px; 
+  }
+
+  .fun-block {
+    max-width: 100%; 
+    padding: 0.5rem; 
+  }
+
+  .skills-container,
+  .tech-skills-container {
+    grid-template-columns: 1fr; 
+    padding: 2rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; 
+    padding: 50px; 
+  }
+
+  .fun-block {
+    padding: 0.5rem; 
+  }
+
+  .skills-title,
+  .tech-skills-title {
+    font-size: 2.5rem; 
+  }
+
+  .hobbies-title {
+    font-size: 2rem; 
+  }
+
+  .hobbies-container {
+    gap: 1rem; 
+  }
+
+  .hobby-image {
+    width: 180px;
+    height: 180px; 
+  }
+
+  .skill-item,
+  .tech-skill-item {
+    font-size: 1.1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem; 
+  }
+
+  .skills-title,
+  .tech-skills-title,
+  .hobbies-title {
+    font-size: 1.8rem; 
+  }
+
+  .hobbies-container {
+    gap: 0.5rem; 
+  }
+
+  .hobby-image {
+    width: 150px;
+    height: 150px; 
+  }
+
+  .skill-item,
+  .tech-skill-item {
+    font-size: 1rem; 
+  }
+}
+
 </style>
 

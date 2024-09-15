@@ -47,7 +47,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
-  font-family: "Fahkwang", sans-serif;
+  flex-wrap: wrap; 
+  overflow: hidden; 
 }
 
 .home-content {
@@ -55,6 +56,7 @@ export default {
   align-items: center;
   gap: 2rem;
   margin-left: 70px;
+  flex-wrap: wrap;
 }
 
 .text-content {
@@ -74,18 +76,18 @@ export default {
   border-radius: 15px;
   transition: all 0.5s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  opacity: 0; 
-  animation: slideIn 1s forwards; 
+  opacity: 0;
+  animation: slideIn 1s forwards;
 }
 
 @keyframes slideIn {
   from {
-    transform: translateX(100%); 
-    opacity: 0; 
+    transform: translateX(100%);
+    opacity: 0;
   }
   to {
-    transform: translateX(0); 
-    opacity: 1; 
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -123,4 +125,82 @@ export default {
   background-color: #5091e6;
 }
 
+@media (max-width: 1024px) {
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-content {
+    margin-left: 0;
+    gap: 1rem;
+  }
+
+  .image-container {
+    padding: 50px;
+  }
+
+  .text-content h1 {
+    font-size: 1.8rem;
+    padding: 90px;
+  }
+
+  .text-content h4 {
+    font-size: 1.8rem;
+  }
+
+  .text-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    padding: 20px;
+  }
+
+  .portfolio-image {
+    max-width: 300px;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-content h4 {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-image {
+    max-width: 200px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .text-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .home-content {
+    margin-left: 0;
+    gap: 0.5rem;
+  }
+}
 </style>
