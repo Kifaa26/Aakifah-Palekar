@@ -51,38 +51,40 @@ export default {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5vh; 
+  padding: 0 15px;
 }
 
 h2 {
-    font-size: 3.6vh; 
+    font-size: 3.6rem;
     font-family: "Permanent Marker", cursive;
-    padding: 6vh 3vh; 
+    padding: 110px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: whitesmoke;
     text-shadow: 2px 2px 5px #000000;
+    
 }
 
 .card {
-  margin-bottom: 4vh; 
+  margin-bottom: 20px;
   background-color: #5b85c4c8;
   height: auto;
-  min-height: 30vh; 
+  min-height: 350px; 
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   width: 100%; 
-  max-width: 30vw; /* Adjusted to viewport width */
+  max-width: 300px;
 }
 
 .card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
-  transform: translateY(-2vh); 
+  transform: translateY(-5px); 
 }
 
 .card-img-top {
-  height: 20vh; 
+  height: 180px; 
   object-fit: cover; 
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -90,12 +92,12 @@ h2 {
 
 .card-body {
   text-align: center; 
-  padding: 2vh; 
+  padding: 10px;
 }
 
 .card-title {
   color: #ffffff;
-  font-size: 2vh; 
+  font-size: 1.25rem;
   font-weight: bold;
   text-shadow: 2px 2px 5px #000000;
   font-family: "Bubbler One", sans-serif;
@@ -103,7 +105,7 @@ h2 {
 
 .card-text {
   color: #ffffff;
-  font-size: 1.6vh; 
+  font-size: 1rem;
   text-shadow: 2px 2px 5px #000000;
   font-family: "Bubbler One", sans-serif;
 }
@@ -123,57 +125,64 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
-  gap: 4vh; 
+  gap: 20px; 
 }
 
+
 .col-md-4 {
-  flex: 0 0 calc(33.333% - 4vh); 
-  max-width: calc(33.333% - 4vh); 
+  flex: 0 0 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px);
   box-sizing: border-box;
 }
 
 @media (max-width: 1000px) {
   .card {
-    min-height: 25vh; 
+    min-height: 300px; 
+    margin-left: 50px
   }
 
   .card-img-top {
-    height: 15vh; 
+    height: 150px;
   }
 
   .card-body {
-    padding: 1.5vh; 
+    padding: 8px; 
   }
 
   .card-title {
-    font-size: 1.4vh; 
+    font-size: 1.1rem; 
   }
 
   .card-text {
-    font-size: 1.2vh; 
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 720px) {
   .card {
-    min-height: 20vh; 
+    min-height: 250px; 
+    padding: 50px;
   }
 
   .card-img-top {
-    height: 12vh; 
+    height: 120px; 
   }
 
   .card-body {
-    padding: 1vh; 
+    padding: 6px; 
   }
 
   .card-title {
-    font-size: 1.2vh; 
+    font-size: 1rem; 
   }
 
   .card-text {
-    font-size: 1vh; 
+    font-size: 0.8rem; 
   }
+
+  /* .row {
+    gap: 10px; 
+  } */
 
   .col-md-4 {
     flex: 0 0 100%;
