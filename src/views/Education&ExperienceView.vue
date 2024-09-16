@@ -65,13 +65,13 @@ export default {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 13rem;
+  gap: 2vh; 
+  padding: 10vh; 
 }
 
 .grid-item {
   background-color: rgba(140, 184, 235, 0.9);
-  padding: 3.3rem;
+  padding: 5vh; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -80,24 +80,24 @@ export default {
 }
 
 .grid-card {
-  margin-bottom: 1rem;
+  margin-bottom: 2vh; 
 }
 
 .grid-card-content {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2vh; 
 }
 
 .education-image {
-  max-width: 150px;
+  max-width: 15vh; 
   height: auto;
   border-radius: 8px;
 }
 
 .experience-image {
-    max-width: 180px;
-    border-radius: 8px;
+  max-width: 20vh; 
+  border-radius: 8px;
 }
 
 .text-content {
@@ -105,22 +105,22 @@ export default {
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 2.5vh; 
+  margin-bottom: 2vh; 
   font-family: "Permanent Marker", cursive;
   color: rgba(245, 245, 245, 0.884);
   text-shadow: 2px 2px 5px #000000;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 2vh; 
   font-family: "Permanent Marker", cursive;
   color: rgba(245, 245, 245, 0.918);
   text-shadow: 2px 2px 5px #000000;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.6vh; 
   font-family: "Bubbler One", sans-serif;
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 5px #8b8b8b;
@@ -129,14 +129,14 @@ p {
 @media (max-width: 1024px) {
   .grid-container {
     grid-template-columns: 1fr; 
-    padding: 10rem; 
+    padding: 8vh; 
   }
 }
 
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr; 
-    padding: 7rem; 
+    padding: 6vh; 
   }
 
   .grid-card-content {
@@ -146,38 +146,37 @@ p {
 
   .education-image,
   .experience-image {
-    max-width: 100%; 
+    max-width: 30vh; 
   }
 
   h2 {
-    font-size: 1.8rem; 
+    font-size: 2vh; 
   }
 
   h3 {
-    font-size: 1.2rem; 
+    font-size: 1.5vh; 
   }
 
   p {
-    font-size: 1.1rem; 
+    font-size: 1.2vh; 
   }
 }
 
 @media (max-width: 480px) {
   .grid-container {
-    padding: 5rem; 
+    padding: 4vh; 
   }
 
   h2 {
-    font-size: 1.6rem; 
+    font-size: 1.8vh; 
   }
 
   h3 {
-    font-size: 1rem; 
+    font-size: 1.4vh; 
   }
 
   p {
-    font-size: 1rem; 
+    font-size: 1.1vh; 
   }
 }
-
 </style>

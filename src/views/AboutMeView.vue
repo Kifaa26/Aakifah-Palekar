@@ -59,7 +59,7 @@ export default {
     return {
       aboutMe: {
         title: 'About Me',
-        description: 'I am a passionate software developer with a deep curiosity for the technologies behind software creation. From a young age, I’ve been fascinated by how apps and websites are made, and in high school, I discovered coding as the key to bringing these applications to life. This discovery solidified my path toward a career in Information Technology. I’ve gained valuable knowledge and skills in app and web development, and I’m eager to demonstrate my abilities in a professional setting. I thrive in relaxed, harmonious environments where camaraderie is valued, and laughter is abundant. While I enjoy light-hearted moments, I understand the importance of focus and diligence when it comes to work. I take pride in fostering a positive atmosphere, especially during tense situations, and I’m driven by the belief that motivating and being motivated are essential to achieving success and completing tasks.'
+        description: 'I am a passionate web developer with a deep curiosity for the technologies behind website and application creation. From a young age, I’ve been fascinated by how websites and web applications are built, and in high school, I discovered coding as the key to bringing these ideas to life. This discovery solidified my path toward a career in web development. I’ve gained valuable knowledge and skills in frontend and backend development, and I’m eager to apply my abilities in a professional setting. I thrive in relaxed, collaborative environments where camaraderie and teamwork are valued, and laughter is part of the day. While I enjoy light-hearted moments, I understand the importance of focus and dedication when it comes to getting the job done. I take pride in fostering a positive atmosphere, especially in challenging situations, and I’m driven by the belief that motivation and collaboration are key to achieving success and completing projects.'
       },
       softSkills: [
         { name: 'Communication', icon: 'fa-comments', color: '#4a90e2' },
@@ -274,14 +274,40 @@ p {
   }
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 2.5rem; 
-    padding: 50px; 
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 10vh; 
+  }
+
+  .text-container, .image-container {
+    max-width: 100%; 
+  }
+
+  .about-image {
+    width: 80%; 
+    max-width: 300px; 
   }
 
   .fun-block {
-    padding: 0.5rem; 
+    max-width: 100%; 
+    padding: 5vh; 
+  }
+
+  .skills-container,
+  .tech-skills-container {
+    grid-template-columns: 1fr; 
+    padding: 10vh; 
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; 
+    padding: 10vh; 
+  }
+
+  .fun-block {
+    padding: 5vh; 
   }
 
   .skills-title,
@@ -294,7 +320,7 @@ p {
   }
 
   .hobbies-container {
-    gap: 1rem; 
+    gap: 5vh; 
   }
 
   .hobby-image {
@@ -320,7 +346,7 @@ p {
   }
 
   .hobbies-container {
-    gap: 0.5rem; 
+    gap: 2vh; 
   }
 
   .hobby-image {

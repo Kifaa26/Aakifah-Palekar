@@ -31,8 +31,8 @@ export default {
     return {
       home: {
         title: "Aakifah Palekar",
-        subtitle: "Software Developer",
-        description: "I’m passionate about software development, driven by problem-solving, continuous learning, and collaborating on innovative projects to create impactful solutions.",
+        subtitle: "Web Developer",
+        description: "I’m passionate about web development, driven by crafting user-friendly interfaces, staying up-to-date with the latest technologies, and collaborating on creative projects to build engaging and dynamic web experiences.",
         image: "https://github.com/Kifaa26/images/blob/main/images/Aakifah%202.jpeg?raw=true"
       },
       loading: false
@@ -154,22 +154,58 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
-  .home-content {
+@media (max-width: 1024px) {
+  .home-section {
     flex-direction: column;
     align-items: center;
   }
 
+  .home-content {
+    margin-left: 0;
+    gap: 1rem;
+    padding: 10vh; 
+  }
+
   .image-container {
-    padding: 20px;
+    padding: 10vh;
   }
 
   .portfolio-image {
-    max-width: 300px;
+    max-width: 400px; 
+  }
+
+  .text-content h1 {
+    font-size: 1.8rem;
+    padding: 10vh; 
+  }
+
+  .text-content h4 {
+    font-size: 1.8rem;
+  }
+
+  .text-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 8vh; 
+  }
+
+  .image-container {
+    padding: 8vh; 
+  }
+
+  .portfolio-image {
+    max-width: 500px;
   }
 
   .text-content h1 {
     font-size: 2.5rem;
+    padding: 8vh; 
   }
 
   .text-content h4 {
@@ -188,6 +224,7 @@ export default {
 
   .text-content h1 {
     font-size: 2rem;
+    padding: 5vh; /* Adjusted to 5vh for padding */
   }
 
   .text-content h4 {
@@ -201,6 +238,7 @@ export default {
   .home-content {
     margin-left: 0;
     gap: 0.5rem;
+    padding: 5vh; /* Adjusted to 5vh for padding */
   }
 }
 </style>
