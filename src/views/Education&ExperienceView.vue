@@ -37,7 +37,7 @@ export default {
     return {
       education: [
         {
-          degree: "Full-stack Software & Web Development Bootcamp",
+          degree: "Full-stack Web Development Bootcamp",
           school: "Life Choices Academy",
           year: "April 2024 - September 2024",
           image: "https://github.com/Kifaa26/images/blob/main/images/LC.png?raw=true"

@@ -12,9 +12,36 @@
     box-sizing: border-box;
 }
 
+/* Scrollbar container */
 ::-webkit-scrollbar {
-    display: none;
+    width: 12px; 
 }
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, rgb(54, 97, 146)20%, rgba(130, 175, 228, 0.925)100%);
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(54, 97, 146, 1); 
+    border: 3px solid rgba(54, 97, 146, 1); 
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, rgb(54, 97, 146)20%, rgba(130, 175, 228, 0.925)100%); 
+    transition: background 0.3s ease-in-out;
+}
+
+/* Scrollbar handle on active (when dragging) */
+::-webkit-scrollbar-thumb:active {
+    background: rgba(130, 175, 228, 0.925);
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 
 /* navbar */
 
@@ -52,6 +79,8 @@ html {
     margin: 0;
     overflow-x: hidden;
     padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 body {

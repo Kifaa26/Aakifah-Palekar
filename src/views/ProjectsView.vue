@@ -57,7 +57,7 @@ export default {
 h2 {
     font-size: 3.6rem;
     font-family: "Permanent Marker", cursive;
-    padding: 130px;
+    padding: 110px;
     padding-left: 50px;
     display: flex;
     flex-direction: column;
@@ -76,6 +76,11 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   width: 100%; 
   max-width: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px); 
 }
 
 .card-img-top {
@@ -120,7 +125,14 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
-  gap: 20px;
+  gap: 20px; 
+}
+
+
+.col-md-4 {
+  flex: 0 0 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px);
+  box-sizing: border-box;
 }
 
 @media (max-width: 1000px) {

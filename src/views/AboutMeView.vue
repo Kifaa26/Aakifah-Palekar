@@ -10,9 +10,6 @@
         </div>
         <SpinnerComp v-else />
       </div>
-      <div class="image-container">
-        <img src="https://github.com/Kifaa26/images/blob/main/images/code.jpg?raw=true" alt="Coding Image" class="about-image" loading="lazy" />
-      </div>
     </div>
   </section>
 

@@ -67,7 +67,7 @@ export default {
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 100px;
+  padding: 130px;
 }
 
 .portfolio-image {
