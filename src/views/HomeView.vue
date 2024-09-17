@@ -130,7 +130,7 @@ export default {
   .home-section {
     flex-direction: column;
     align-items: center;
-    padding: 6.9rem;
+    padding: 6.9rem; 
   }
 
   .home-content {
@@ -140,11 +140,12 @@ export default {
   }
 
   .image-container {
-    padding: 2rem;
+    padding: 0.25rem; 
   }
 
   .portfolio-image {
-    max-width: 300px;
+    width: 100%; 
+    max-width: 400px; 
   }
 
   .text-content h1 {
@@ -160,7 +161,6 @@ export default {
   }
 }
 
-/* Medium devices (tablets, 600px to 1024px) */
 @media (min-width: 600px) and (max-width: 1024px) {
   .home-section {
     flex-direction: column;
@@ -195,7 +195,6 @@ export default {
   }
 }
 
-/* Large devices (desktops, 1024px and up) */
 @media (min-width: 1024px) {
   .home-section {
     flex-direction: row;
