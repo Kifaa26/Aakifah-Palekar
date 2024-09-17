@@ -41,7 +41,7 @@
     <h3 class="hobbies-title">Hobbies</h3>
     <div class="hobbies-container">
       <div v-for="hobby in hobbies" :key="hobby.name" class="hobby-item">
-        <img :src="hobby.image" :alt="hobby.name" class="hobby-image">
+        <img :src="hobby.image" :alt="hobby.name" class="hobby-image" loading="lazy">
         <p class="hobby-name">{{ hobby.name }}</p>
       </div>
     </div>
