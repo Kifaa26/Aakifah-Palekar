@@ -19,7 +19,7 @@
                             <router-link class="nav-link" to="/aboutMe">About Me</router-link>
                         </li>
                         <li class="nav-item">
-                            <router-link class="nav-link" to="/eductation&experience">Eductation & Experience</router-link>
+                            <router-link class="nav-link" to="/education&experience">Education & Experience</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link class="nav-link" to="/projects">Projects</router-link>
