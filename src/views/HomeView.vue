@@ -125,138 +125,30 @@ export default {
   background-color: #5091e6;
 }
 
-@media (min-width: 1800px) {
-  .home-section {
-    padding: 8vh 15vw; 
-    gap: 4vh; 
-  }
 
-  .home-content {
-    gap: 4vh; 
-    margin-left: 10vh; 
-  }
-
-  .image-container {
-    padding: 10vh; 
-  }
-
-  .portfolio-image {
-    max-width: 500px; 
-    border-radius: 20px; 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
-  }
-
-  .text-content h1 {
-    font-size: 6rem; 
-    padding: 0 5vh; 
-  }
-
-  .text-content h4 {
-    font-size: 3rem; 
-  }
-
-  .text-content p {
-    font-size: 2rem; 
-  }
-
-  .btn-primary {
-    padding: 1rem 2rem; 
-    font-size: 1.5rem; 
-  }
-
-  .spinner-overlay {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .home-section {
     flex-direction: column;
     align-items: center;
+    padding: 6.9rem;
   }
 
   .home-content {
     margin-left: 0;
     gap: 1rem;
-  }
-
-  .image-container {
-    padding: 50px;
-  }
-
-  .text-content h1 {
-    font-size: 1.8rem;
-    padding: 90px;
-  }
-
-  .text-content h4 {
-    font-size: 1.8rem;
-  }
-
-  .text-content p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .home-section {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .home-content {
-    margin-left: 0;
-    gap: 1rem;
-    padding: 10vh; 
   }
 
   .image-container {
-    padding: 10vh;
+    padding: 2rem;
   }
 
   .portfolio-image {
-    max-width: 400px; 
+    max-width: 300px;
   }
 
   .text-content h1 {
-    font-size: 1.8rem;
-    padding: 10vh; 
-  }
-
-  .text-content h4 {
-    font-size: 1.8rem;
-  }
-
-  .text-content p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-content {
-    flex-direction: column;
-    align-items: center;
-    padding: 8vh; 
-  }
-
-  .image-container {
-    padding: 8vh; 
-  }
-
-  .portfolio-image {
-    max-width: 500px;
-  }
-
-  .text-content h1 {
-    font-size: 2.5rem;
-    padding: 8vh; 
+    font-size: 2rem;
   }
 
   .text-content h4 {
@@ -264,32 +156,77 @@ export default {
   }
 
   .text-content p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 480px) {
-  .portfolio-image {
-    max-width: 200px;
-  }
-
-  .text-content h1 {
-    font-size: 2rem;
-    padding: 5vh; 
-  }
-
-  .text-content h4 {
-    font-size: 1.3rem;
-  }
-
-  .text-content p {
-    font-size: 1rem;
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .home-section {
+    flex-direction: column;
+    padding: 2.5rem;
   }
 
   .home-content {
     margin-left: 0;
-    gap: 0.5rem;
-    padding: 5vh; 
+    gap: 1.5rem;
+    flex-direction: column;
+    padding: 4vh;
+  }
+
+  .image-container {
+    padding: 4vh;
+  }
+
+  .portfolio-image {
+    max-width: 350px;
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-content h4 {
+    font-size: 1.75rem;
+  }
+
+  .text-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .home-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  .home-content {
+    flex-direction: row;
+    margin-left: 70px;
+    gap: 2rem;
+  }
+
+  .image-container {
+    padding: 130px;
+  }
+
+  .portfolio-image {
+    max-width: 400px;
+  }
+
+  .text-content h1 {
+    font-size: 4rem;
+  }
+
+  .text-content h4 {
+    font-size: 2rem;
+  }
+
+  .text-content p {
+    font-size: 1.5rem;
   }
 }
 </style>

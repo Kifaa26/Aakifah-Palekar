@@ -221,90 +221,44 @@ body {
   background-color: #000000;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .contact-content {
     flex-direction: column;
-    gap: 2rem; 
-  }
-  
-  .contact-form-wrapper, .contact-info {
     padding: 1rem;
   }
-  
   .contact-info {
     padding: 1rem;
   }
-}
-
-@media (max-width: 480px) {
   .contact-form {
-    padding: 4rem; 
+    padding: 4rem;
     width: 100%;
   }
-  
-  .contact-info h3 {
-    font-size: 1.5rem; 
-    margin-left: 70px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
   }
-  
-  .contact-info p {
-    font-size: 1.1rem; 
-    margin-left: 70px;
+  .contact-form {
+    padding: 1rem;
+    width: 100%;
   }
-  
-  .social-links a {
-    font-size: 1rem; 
-    padding: 100vh;
-    margin-left: 70px;
+  .contact-info {
+    padding: 1.5rem;
   }
 }
 
-@media (min-width: 1800px) {
-  .contact-section {
-    padding: 10vh;
-  }
-
+/* Large devices (desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
   .contact-content {
-    gap: 8vh; 
-    max-width: 1400px; 
+    flex-direction: row;
+    gap: 4rem;
   }
-
-  .contact-form-wrapper,
-  .contact-info {
-    padding: 0 5vh; 
-  }
-
   .contact-form {
-    width: 120%;
-    padding: 15vh; 
-    padding-left: 20vh; 
-  }
-
-  .contact-info {
-    padding: 20vh; 
-    padding-right: 10vh; 
-  }
-
-  .contact-info h3 {
-    font-size: 2.5rem; 
-  }
-
-  .contact-info p {
-    font-size: 1.6rem; 
-  }
-
-  .contact-form label {
-    font-size: 1.4rem; 
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 1.2rem; 
-  }
-
-  .contact-form button {
-    font-size: 1.4rem; 
-    padding: 2rem; 
+    padding: 100px 150px;
+    width: 160%;
   }
 }
 
