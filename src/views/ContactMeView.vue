@@ -254,8 +254,57 @@ body {
   
   .social-links a {
     font-size: 1rem; 
-    padding: 0.6rem;
+    padding: 100vh;
     margin-left: 70px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .contact-section {
+    padding: 10vh;
+  }
+
+  .contact-content {
+    gap: 8vh; 
+    max-width: 1400px; 
+  }
+
+  .contact-form-wrapper,
+  .contact-info {
+    padding: 0 5vh; 
+  }
+
+  .contact-form {
+    width: 120%;
+    padding: 15vh; 
+    padding-left: 20vh; 
+  }
+
+  .contact-info {
+    padding: 20vh; 
+    padding-right: 10vh; 
+  }
+
+  .contact-info h3 {
+    font-size: 2.5rem; 
+  }
+
+  .contact-info p {
+    font-size: 1.6rem; 
+  }
+
+  .contact-form label {
+    font-size: 1.4rem; 
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.2rem; 
+  }
+
+  .contact-form button {
+    font-size: 1.4rem; 
+    padding: 2rem; 
   }
 }
 

@@ -172,6 +172,7 @@ p {
   color: whitesmoke;
   font-family: "Permanent Marker", cursive;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px #000000;
 }
 
 .skills-container,

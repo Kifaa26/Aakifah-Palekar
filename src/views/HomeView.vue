@@ -46,7 +46,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 3rem;
   flex-wrap: wrap; 
   overflow: hidden; 
 }
@@ -123,6 +123,57 @@ export default {
 
 .btn-primary:hover {
   background-color: #5091e6;
+}
+
+@media (min-width: 1800px) {
+  .home-section {
+    padding: 8vh 15vw; 
+    gap: 4vh; 
+  }
+
+  .home-content {
+    gap: 4vh; 
+    margin-left: 10vh; 
+  }
+
+  .image-container {
+    padding: 10vh; 
+  }
+
+  .portfolio-image {
+    max-width: 500px; 
+    border-radius: 20px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  }
+
+  .text-content h1 {
+    font-size: 6rem; 
+    padding: 0 5vh; 
+  }
+
+  .text-content h4 {
+    font-size: 3rem; 
+  }
+
+  .text-content p {
+    font-size: 2rem; 
+  }
+
+  .btn-primary {
+    padding: 1rem 2rem; 
+    font-size: 1.5rem; 
+  }
+
+  .spinner-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -224,7 +275,7 @@ export default {
 
   .text-content h1 {
     font-size: 2rem;
-    padding: 5vh; /* Adjusted to 5vh for padding */
+    padding: 5vh; 
   }
 
   .text-content h4 {
@@ -238,7 +289,7 @@ export default {
   .home-content {
     margin-left: 0;
     gap: 0.5rem;
-    padding: 5vh; /* Adjusted to 5vh for padding */
+    padding: 5vh; 
   }
 }
 </style>
