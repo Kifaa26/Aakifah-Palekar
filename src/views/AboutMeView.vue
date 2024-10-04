@@ -25,12 +25,13 @@
     </div>
   </section>
 
-  <section>
+   <section>
     <div class="tech-skills-section" v-if="technicalSkills && technicalSkills.length">
       <h3 class="tech-skills-title">Technical Skills</h3>
       <div class="tech-skills-container">
         <div v-for="skill in technicalSkills" :key="skill.name" class="tech-skill-item">
-          <i :class="getTechIconClass(skill.name)" :style="{ color: skill.color }"></i>
+          <img v-if="skill.icon" :src="skill.icon" :alt="skill.name" class="tech-skill-logo" />
+          <i v-else :class="getTechIconClass(skill.name)" :style="{ color: skill.color }"></i>
           <span>{{ skill.name }}</span>
         </div>
       </div>
@@ -72,14 +73,14 @@ export default {
         { name: 'Work Ethic', icon: 'fa-briefcase', color: '#e67e22' } 
       ],
       technicalSkills: [
-        { name: 'HTML', icon: 'fa-html5', color: '#e34c26' },
-        { name: 'CSS', icon: 'fa-css3-alt', color: '#1572b6' }, 
-        { name: 'JavaScript', icon: 'fa-js-square', color: '#f7df1e' }, 
-        { name: 'Vue.Js', icon: 'fa-vuejs', color: '#42b883' }, 
-        { name: 'Node.Js', icon: 'fa-node-js', color: '#8cc84b' }, 
-        { name: 'MySQL', icon: "fa-solid fa-database", style:"color: #74C0FC" }, 
-        { name: 'Canva', icon: 'fa-paint-brush', color: '#1572b6' }, 
-        { name: 'GitHub', icon: 'fa-github', color: '#333' } 
+        { name: 'HTML', icon: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg', color: '#e34c26' },
+        { name: 'CSS', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg', color: '#1572b6' },
+        { name: 'JavaScript', icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png', color: '#f7df1e' },
+        { name: 'Vue.Js', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg', color: '#42b883' },
+        { name: 'Node.Js', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg', color: '#8cc84b' },
+        { name: 'MySQL', icon: 'https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg', color: '#00758F' }, 
+        { name: 'Canva', svgPath: 'https://upload.wikimedia.org/wikipedia/commons/5/58/Canva_logo.svg' },  
+        { name: 'GitHub', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg', color: '#333' }
       ],
       hobbies: [
         { name: 'Reading', image: 'https://github.com/Kifaa26/images/blob/main/images/books.jpg?raw=true' },
@@ -358,6 +359,55 @@ p {
   .skill-item,
   .tech-skill-item {
     font-size: 1rem; 
+  }
+}
+
+.tech-skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px #000000;
+    font-family: "Bubbler One", sans-serif;
+    text-align: center;
+  }
+
+  .tech-skill-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .tech-skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2.5rem;
+    max-width: 90%; 
+    margin: 10px auto; 
+    padding: 3.5rem;
+    justify-items: center;
+  }
+
+  @media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; 
+  }
+
+  .skills-title,
+  .tech-skills-title,
+  .hobbies-title {
+    font-size: 2rem; 
+  }
+
+  .hobby-image {
+    width: 180px;
+    height: 180px; 
+  }
+
+  .skill-item,
+  .tech-skill-item {
+    font-size: 1.2rem; 
   }
 }
 

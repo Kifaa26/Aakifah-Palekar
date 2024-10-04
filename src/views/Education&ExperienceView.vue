@@ -16,14 +16,14 @@
 
     <div class="grid-item">
       <h2>Experience</h2>
-      <div class="grid-card">
+      <div v-for="(exp, index) in experience" :key="index" class="grid-card">
         <div class="grid-card-content">
-          <img :src="experience.image" alt="Experience Image" class="experience-image" loading="lazy" v-if="experience.image" />
+          <img :src="exp.image" alt="Experience Image" class="experience-image" loading="lazy" v-if="exp.image" />
           <div class="text-content">
-            <h3>{{ experience.position }}</h3>
-            <p><strong>Company:</strong> {{ experience.company }}</p>
-            <p><strong>Year:</strong> {{ experience.year }}</p>
-            <p><strong>Description:</strong> {{ experience.description }}</p>
+            <h3>{{ exp.position }}</h3>
+            <p><strong>Company:</strong> {{ exp.company }}</p>
+            <p><strong>Year:</strong> {{ exp.year }}</p>
+            <p><strong>Description:</strong> {{ exp.description }}</p>
           </div>
         </div>
       </div>
@@ -49,13 +49,22 @@ export default {
           image: "https://uniform.wingzero.tw/assets/images/badge/za-450-w-cape-plumstead.Array"
         }
       ],
-      experience: {
-        position: "Customer Service Representative",
-        company: "Teleperformance",
-        year: "October 2022 - December 2023",
-        description: "Assisted customers with inquiries and issues related to products and services.",
-        image: "https://github.com/Kifaa26/images/blob/main/images/TP.jpg?raw=true"
-      }
+      experience: [
+        {
+          position: "Customer Service Representative",
+          company: "Teleperformance",
+          year: "October 2022 - December 2023",
+          description: "Assisted customers with inquiries and issues related to products and services.",
+          image: "https://github.com/Kifaa26/images/blob/main/images/TP.jpg?raw=true"
+        },
+        {
+          position: "Web Developer",
+          company: "LC Studio",
+          year: "September 2024 - Present",
+          description: "I'm currently an intern at LC Studio.",
+          image: "https://github.com/Kifaa26/images/blob/main/images/lc_studioza_logo.jpeg?raw=true"
+        }
+      ],
     };
   }
 };

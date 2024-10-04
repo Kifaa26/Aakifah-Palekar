@@ -2,11 +2,14 @@
   <section class="home-section">
     <div class="home-content">
       <div class="text-content">
-        <h1>{{ home.title }}</h1>
+        <div class="name-wrapper">
+          <h1>{{ home.firstName }}</h1>
+          <h1>{{ home.lastName }}</h1>
+        </div>
         <h4>{{ home.subtitle }}</h4>
         <p class="pt-3">{{ home.description }}</p>
         <div>
-          <a href="https://pdf.ac/3LXURX" target="_blank" class="btn btn-primary mt-3">My Resume</a>
+          <a href="https://drive.google.com/file/d/1aCRViD2921CMlCJvuvEDIfmkSPcUiqnN/view?usp=drive_link" target="_blank" class="btn btn-primary mt-3">My Resume</a>
         </div>
         <SpinnerComp v-if="home-section" />
       </div>
@@ -28,16 +31,17 @@ export default {
     SpinnerComp
   },
   data() {
-    return {
-      home: {
-        title: "Aakifah Palekar",
-        subtitle: "Web Developer",
-        description: "I’m passionate about web development, driven by crafting user-friendly interfaces, staying up-to-date with the latest technologies, and collaborating on creative projects to build engaging and dynamic web experiences.",
-        image: "https://github.com/Kifaa26/images/blob/main/images/Aakifah%202.jpeg?raw=true"
-      },
-      loading: false
-    };
-  }
+  return {
+    home: {
+      firstName: "Aakifah",
+      lastName: "Palekar",
+      subtitle: "Web Developer",
+      description: "I’m passionate about web development, driven by crafting user-friendly interfaces, staying up-to-date with the latest technologies, and collaborating on creative projects to build engaging and dynamic web experiences.",
+      image: "https://github.com/Kifaa26/images/blob/main/images/Aakifah%202.jpeg?raw=true"
+    },
+    loading: false
+  };
+}
 };
 </script>
 
@@ -103,6 +107,24 @@ export default {
   color: whitesmoke;
   text-shadow: 2px 2px 5px #000000;
   font-size: 2rem;
+  opacity: 0; 
+  animation: fadeIn 1s forwards; 
+  animation-delay: 0.5s; 
+  color: #8f5acc;
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  font-weight: 600; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
 }
 
 .text-content p {
@@ -125,6 +147,22 @@ export default {
   background-color: #5091e6;
 }
 
+.name-wrapper {
+  display: flex;
+  align-items: baseline; 
+  gap: 1rem;
+}
+
+.name-wrapper h1 {
+  margin: 0; 
+  font-size: 4rem; 
+}
+
+.text-content h1 {
+  font-family: "Patrick Hand", cursive;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px #000000;
+}
 
 @media (max-width: 600px) {
   .home-section {
