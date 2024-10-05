@@ -236,7 +236,7 @@ body {
   }
   .contact-form {
     padding: 5rem 0;
-    width: 100%; 
+    width: 120%; 
   }
 }
 
@@ -249,7 +249,7 @@ body {
   }
   .contact-form {
     padding: 1rem;
-    width: 100%;
+    width: 120%;
   }
   .contact-info {
     padding: 1.5rem;
