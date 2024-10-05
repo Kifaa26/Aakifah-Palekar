@@ -51,18 +51,18 @@ export default {
       ],
       experience: [
         {
-          position: "Customer Service Representative",
-          company: "Teleperformance",
-          year: "October 2022 - December 2023",
-          description: "Assisted customers with inquiries and issues related to products and services.",
-          image: "https://github.com/Kifaa26/images/blob/main/images/TP.jpg?raw=true"
-        },
-        {
           position: "Web Developer",
           company: "LC Studio",
           year: "September 2024 - Present",
           description: "I'm currently an intern at LC Studio.",
           image: "https://github.com/Kifaa26/images/blob/main/images/lc_studioza_logo.jpeg?raw=true"
+        },
+        {
+          position: "Customer Service Representative",
+          company: "Teleperformance",
+          year: "October 2022 - December 2023",
+          description: "Assisted customers with inquiries and issues related to products and services.",
+          image: "https://github.com/Kifaa26/images/blob/main/images/TP.jpg?raw=true"
         }
       ],
     };
