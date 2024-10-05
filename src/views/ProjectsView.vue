@@ -137,8 +137,8 @@ h2 {
 
 @media (max-width: 1000px) {
   .card {
-    min-height: 300px; 
-    margin-left: 50px
+    min-height: 300px;
+    margin: 10px auto;
   }
 
   .card-img-top {
@@ -146,47 +146,68 @@ h2 {
   }
 
   .card-body {
-    padding: 8px; 
+    padding: 8px;
   }
 
   .card-title {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
   }
 
   .card-text {
     font-size: 0.9rem;
   }
+
+  h2 {
+    margin-bottom: 10px; /* Adjust the gap between the heading and cards */
+  }
 }
 
 @media (max-width: 720px) {
-  .card {
-    min-height: 250px; 
-    padding: 50px;
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .card-img-top {
-    height: 120px; 
+  .row {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    width: 100%; 
   }
-
-  .card-body {
-    padding: 6px; 
-  }
-
-  .card-title {
-    font-size: 1rem; 
-  }
-
-  .card-text {
-    font-size: 0.8rem; 
-  }
-
-  /* .row {
-    gap: 10px; 
-  } */
 
   .col-md-4 {
     flex: 0 0 100%;
     max-width: 100%;
+    margin: 10px 0; 
+    margin-bottom: 40px;
+  }
+
+  .card {
+    min-height: 250px;
+    padding: 2rem;
+    margin: auto 0; 
+  }
+
+  .card-img-top {
+    height: 120px;
+  }
+
+  .card-body {
+    padding: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    margin-bottom: 5px; 
   }
 }
 </style>

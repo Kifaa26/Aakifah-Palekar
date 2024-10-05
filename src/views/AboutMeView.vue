@@ -201,7 +201,7 @@ p {
 
 .skill-item i,
 .tech-skill-item i {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-shadow: 2px 2px 5px #000000;
 }
 .hobbies-section {
@@ -379,14 +379,8 @@ p {
     object-fit: contain;
   }
 
-  .tech-skills-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 2.5rem;
-    max-width: 90%; 
-    margin: 10px auto; 
-    padding: 3.5rem;
-    justify-items: center;
+  .tech-skills-container { 
+    padding: 10vh; 
   }
 
   @media (max-width: 768px) {

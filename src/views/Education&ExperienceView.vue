@@ -1,9 +1,9 @@
 <template>
-  <section class="grid-container">
-    <div class="grid-item">
+  <section class="container">
+    <div class="section">
       <h2>Education</h2>
-      <div v-for="(edu, index) in education" :key="index" class="grid-card">
-        <div class="grid-card-content">
+      <div v-for="(edu, index) in education" :key="index" class="content-item">
+        <div class="content-row">
           <img :src="edu.image" alt="Education Image" class="education-image" loading="lazy" v-if="edu.image" />
           <div class="text-content">
             <h3>{{ edu.degree }}</h3>
@@ -14,10 +14,10 @@
       </div>
     </div>
 
-    <div class="grid-item">
+    <div class="section">
       <h2>Experience</h2>
-      <div v-for="(exp, index) in experience" :key="index" class="grid-card">
-        <div class="grid-card-content">
+      <div v-for="(exp, index) in experience" :key="index" class="content-item">
+        <div class="content-row">
           <img :src="exp.image" alt="Experience Image" class="experience-image" loading="lazy" v-if="exp.image" />
           <div class="text-content">
             <h3>{{ exp.position }}</h3>
@@ -71,122 +71,106 @@ export default {
 </script>
 
 <style scoped>
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 13rem;
-}
-
-.grid-item {
-  background-color: rgba(140, 184, 235, 0.9);
-  padding: 3.3rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  min-height: 100vh; /* Ensure full height for vertical centering */
+  padding: 5rem;
 }
 
-.grid-card {
-  margin-bottom: 1rem;
+.section {
+  width: 100%; /* Ensures sections don't exceed the width of the page */
+  max-width: 800px; /* Limit width for better readability */
+  margin-bottom: 4rem;
 }
 
-.grid-card-content {
+.content-row {
   display: flex;
   align-items: center;
-  gap: 1rem;
-}
-
-.education-image {
-  max-width: 150px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.experience-image {
-    max-width: 180px;
-    border-radius: 8px;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .text-content {
   flex: 1;
 }
 
+.education-image, .experience-image {
+  max-width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
 h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
   font-family: "Permanent Marker", cursive;
-  color: rgba(245, 245, 245, 0.884);
+  color: #ffffff;
   text-shadow: 2px 2px 5px #000000;
+  text-align: center; 
+  padding: 2.5rem;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: "Permanent Marker", cursive;
-  color: rgba(245, 245, 245, 0.918);
+  color: #ffffff;
   text-shadow: 2px 2px 5px #000000;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Bubbler One", sans-serif;
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 5px #8b8b8b;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
 }
 
 @media (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: 1fr; 
-    padding: 10rem; 
+  .content-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-image, .experience-image {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr; 
-    padding: 7rem; 
-  }
-
-  .grid-card-content {
-    flex-direction: column; 
-    align-items: flex-start; 
-  }
-
-  .education-image,
-  .experience-image {
-    max-width: 100%; 
+  .container {
+    padding: 3rem;
   }
 
   h2 {
-    font-size: 1.8rem; 
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.2rem; 
+    font-size: 1.3rem;
   }
 
   p {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .grid-container {
-    padding: 5rem; 
+  .container {
+    padding: 4.5rem;
   }
 
   h2 {
-    font-size: 1.6rem; 
+    font-size: 1.8rem;
   }
 
   h3 {
-    font-size: 1rem; 
+    font-size: 1.1rem;
   }
 
   p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
-
 </style>

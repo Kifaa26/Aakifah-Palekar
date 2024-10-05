@@ -224,22 +224,28 @@ body {
 @media only screen and (max-width: 600px) {
   .contact-content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
+    gap: 2rem; 
   }
   .contact-info {
     padding: 1rem;
+    text-align: center;
+    margin-top: 1rem; 
   }
   .contact-form {
-    padding: 4rem;
-    width: 100%;
+    padding: 5rem 0;
+    width: 100%; 
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .contact-content {
     flex-direction: column;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
   }
   .contact-form {
     padding: 1rem;
@@ -247,10 +253,10 @@ body {
   }
   .contact-info {
     padding: 1.5rem;
+    text-align: center;
   }
 }
 
-/* Large devices (desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
   .contact-content {
     flex-direction: row;

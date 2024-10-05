@@ -39,7 +39,6 @@ export default {
       description: "I’m passionate about web development, driven by crafting user-friendly interfaces, staying up-to-date with the latest technologies, and collaborating on creative projects to build engaging and dynamic web experiences.",
       image: "https://github.com/Kifaa26/images/blob/main/images/Aakifah%202.jpeg?raw=true"
     },
-    loading: false
   };
 }
 };
@@ -168,7 +167,6 @@ export default {
   .home-section {
     flex-direction: column;
     align-items: center;
-    padding: 6.9rem; 
   }
 
   .home-content {
@@ -188,14 +186,20 @@ export default {
 
   .text-content h1 {
     font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   .text-content h4 {
     font-size: 1.5rem;
+    margin-top: 0.5rem; 
   }
 
   .text-content p {
     font-size: 1rem;
+  }
+
+  .name-wrapper {
+    padding: 5rem 0 0; 
   }
 }
 
