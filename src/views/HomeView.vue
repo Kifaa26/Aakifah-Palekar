@@ -9,7 +9,7 @@
         <h4>{{ home.subtitle }}</h4>
         <p class="pt-3">{{ home.description }}</p>
         <div>
-          <a href="https://drive.google.com/file/d/1aCRViD2921CMlCJvuvEDIfmkSPcUiqnN/view?usp=drive_link" target="_blank" class="btn btn-primary mt-3">My Resume</a>
+          <a href="https://pdf.ac/2i0u5z" target="_blank" class="btn btn-primary mt-3">My Resume</a>
         </div>
         <SpinnerComp v-if="home-section" />
       </div>
