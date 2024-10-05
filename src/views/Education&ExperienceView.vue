@@ -76,13 +76,13 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ensure full height for vertical centering */
+  min-height: 100vh;
   padding: 5rem;
 }
 
 .section {
-  width: 100%; /* Ensures sections don't exceed the width of the page */
-  max-width: 800px; /* Limit width for better readability */
+  width: 100%;
+  max-width: 800px; 
   margin-bottom: 4rem;
 }
 
@@ -114,14 +114,14 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: "Permanent Marker", cursive;
   color: #ffffff;
   text-shadow: 2px 2px 5px #000000;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: "Bubbler One", sans-serif;
   color: #ffffff;
   text-shadow: 2px 2px 5px #000000;

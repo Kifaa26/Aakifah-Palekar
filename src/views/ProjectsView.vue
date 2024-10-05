@@ -125,7 +125,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
-  gap: 20px; 
+  gap: 5px; 
 }
 
 
@@ -133,6 +133,7 @@ h2 {
   flex: 0 0 calc(33.333% - 20px); 
   max-width: calc(33.333% - 20px);
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1000px) {
