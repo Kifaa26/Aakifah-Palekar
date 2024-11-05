@@ -119,7 +119,6 @@ h2 {
 
 .btn:hover {
   box-shadow: 0 4px 8px rgba(255, 254, 254, 0.3);
-   transform: translateY(-3px); 
 }
 
 .row {
