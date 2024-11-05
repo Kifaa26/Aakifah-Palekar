@@ -9,7 +9,7 @@
         <h4>{{ home.subtitle }}</h4>
         <p class="pt-3">{{ home.description }}</p>
         <div>
-          <a href="https://pdf.ac/2i0u5z" target="_blank" class="btn btn-primary mt-3">My Resume</a>
+          <a href="https://pdf.ac/14OGl3" target="_blank" class="btn btn-primary mt-3">View my CV <img width="30" height="30" src="https://img.icons8.com/ios/30/resume.png" alt="resume" class="cv-icon light"/></a>
         </div>
         <SpinnerComp v-if="home-section" />
       </div>
@@ -32,6 +32,7 @@ export default {
   },
   data() {
   return {
+    loading: true,
     home: {
       firstName: "Aakifah",
       lastName: "Palekar",
@@ -140,10 +141,22 @@ export default {
   border: none;
   border-radius: 8px;
   text-decoration: none;
+  font-family: "Patrick Hand", cursive;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px); 
+}
+
+/* .btn-primary:hover {
   background-color: #5091e6;
+} */
+
+.cv-icon {
+  filter: brightness(0) invert(1); 
+  margin-left: 8px; 
 }
 
 .name-wrapper {

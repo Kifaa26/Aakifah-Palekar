@@ -119,6 +119,7 @@ h2 {
 
 .btn:hover {
   box-shadow: 0 4px 8px rgba(255, 254, 254, 0.3);
+   transform: translateY(-3px); 
 }
 
 .row {
@@ -159,7 +160,7 @@ h2 {
   }
 
   h2 {
-    margin-bottom: 10px; /* Adjust the gap between the heading and cards */
+    margin-bottom: 10px; 
   }
 }
 
